@@ -28,3 +28,23 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+
+library("ggplot2")
+
+roll2<-function(bones)
+{
+  dice=sample(bones,size = 2,replace = TRUE)
+  sum(dice)
+}
+
+x<- c(-1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1)
+
+y<- x^3
+y
+
+qplot(x,y)
+
+
+```

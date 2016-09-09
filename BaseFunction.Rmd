@@ -28,3 +28,53 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r}
+
+a<-1
+die<- 1:6
+Name<- 1
+name<- 0
+
+my_number<- 999
+
+Name+1
+ls()
+
+die-1
+die/2
+die*die
+
+1:2
+1:4
+
+die
+
+die+1:2  ##从第一位循环相加
+die+1:4
+
+die%*%die ##内乘法
+die%o%die ##外乘法
+
+##FUNCTION
+
+round(3.1415)
+factorial(3)##阶乘
+
+sample(x=1:4,size=2)##模拟掷骰子
+
+roll<- function()
+{
+  die<- 1:6
+  dice<-sample(die,size = 2,replace = TRUE)
+  sum(dice)
+}
+
+
+
+
+
+
+
+```
